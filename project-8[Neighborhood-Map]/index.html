@@ -1,0 +1,198 @@
+<!Doctype>
+<html>
+   <head>
+      <title>Neighbourhood  Map</title>
+      <!--using knockout.js framework gor data binding-->
+      <script src="js\knockout.js"></script>
+      <!--The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      <link rel="stylesheet" href="css/style.css">
+      <!--using css for styling.-->
+      <!--google fonts api 's-->
+      <link href="https://fonts.googleapis.com/css?family=Kranky"  rel="stylesheet">
+   </head>
+   <body>
+      <div class="p">
+         <h1 class="a">**AMRITSAR**</h1>
+         <div class="p1">
+            <!--marquee tag for styling -->
+            <marquee>
+               <p class="b">
+                  <u class="d">THE HOLY CITY</u>
+               </p>
+            </marquee>
+         </div>
+         <h6 class="c">
+            <i><b>PB----->02</b>
+            </i>
+         </h6>
+      </div>
+      <div class="row">
+         <!--col-md-12 for applying map all over the page.-->
+         <div class="col-md-12">
+            <!--using nav bar for locations.-->
+            <ul class="list-unstyle navbar navbar-inverse" data-bind="foreach:locations">
+               <!--data-bind so when location searched it shows only specific location.-->
+               <li class="list" data-bind="visible:show, event:{click:$parent.selectAll}">
+                  <a data-bind="text:title"></a>
+               </li>
+            </ul>
+            <!-- created a button for search of a loaction-->
+            <button class="btn btn-danger navbar-btn">
+               <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Where u want to Visit" data-bind="value: inputText, valueUpdate: 'afterkeydown', event: {keyup: filtersearch}">
+               </div>
+            </button>
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-12" id="map"></div>
+      </div>
+      </div>
+      <script>
+         <!--initialized a map variable -->
+             var map;
+
+             function initMap() {
+                 // for creating  a new map - only center and zoom are needed.
+                 map = new google.maps.Map(document.getElementById('map'), {
+                     center: {
+                         lat: 31.6339793,
+                         lng: 74.8722642
+                     },
+                     zoom: 11,
+                                               // used captor customized map
+                     styles:[
+         {
+             "featureType": "water",
+             "stylers": [
+                 {
+                     "color": "#0e171d"
+                 }
+             ]
+         },
+         {
+             "featureType": "landscape",
+             "stylers": [
+                 {
+                     "color": "#1e303d"
+                 }
+             ]
+         },
+         {
+             "featureType": "road",
+             "stylers": [
+                 {
+                     "color": "#1e303d"
+                 }
+             ]
+         },
+         {
+             "featureType": "poi.park",
+             "stylers": [
+                 {
+                     "color": "#1e303d"
+                 }
+             ]
+         },
+         {
+             "featureType": "transit",
+             "stylers": [
+                 {
+                     "color": "#182731"
+                 },
+                 {
+                     "visibility": "simplified"
+                 }
+             ]
+         },
+         {
+             "featureType": "poi",
+             "elementType": "labels.icon",
+             "stylers": [
+                 {
+                     "color": "#f0c514"
+                 },
+                 {
+                     "visibility": "off"
+                 }
+             ]
+         },
+         {
+             "featureType": "poi",
+             "elementType": "labels.text.stroke",
+             "stylers": [
+                 {
+                     "color": "#1e303d"
+                 },
+                 {
+                     "visibility": "off"
+                 }
+             ]
+         },
+         {
+             "featureType": "transit",
+             "elementType": "labels.text.fill",
+             "stylers": [
+                 {
+                     "color": "#e77e24"
+                 },
+                 {
+                     "visibility": "off"
+                 }
+             ]
+         },
+         {
+             "featureType": "road",
+             "elementType": "labels.text.fill",
+             "stylers": [
+                 {
+                     "color": "#94a5a6"
+                 }
+             ]
+         },
+         {
+             "featureType": "administrative",
+             "elementType": "labels",
+             "stylers": [
+                 {
+                     "visibility": "simplified"
+                 },
+                 {
+                     "color": "#e84c3c"
+                 }
+             ]
+         },
+         {
+             "featureType": "poi",
+             "stylers": [
+                 {
+                     "color": "#e84c3c"
+                 },
+                 {
+                     "visibility": "off"
+                 }
+             ]
+         }
+         ]
+         });
+         //the browser doesn’t know what it means, you need to activate Knockout by doing following things(ko.applyBindings).
+                 ko.applyBindings(new viewmodel1());
+             }
+             function inaccessible()
+             {
+               alert("Not able to open OR load map properly!!!");
+             }
+
+
+
+      </script>
+      <script src="js\app.js"></script>
+      <script src="js\jquery.min.js"></script>
+      <!--to activate google map on your site by following link and applying generating key. -->
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJFWg0vX0S3d8USbTUIEDpl0jb3RTRW-E&callback=initMap" onerror="inaccessible()">
+         //google api
+      </script>
+   </body>
+</html>
