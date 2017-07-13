@@ -5,7 +5,7 @@
 ##How To Execute<br>
 **start**<br>
 =>Download the frontend-nanodegree-arcade-game folder.<br>
-=>open the index.html file in any web browser.<br>
+=>open the index.html file in any web browser.<br> 
 
 *Objective Of Game*<br>
 =>User is player in the game.<br>
