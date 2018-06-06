@@ -2,6 +2,4 @@
 A Repo containing my projects of  Udacity Front-End -Web- Developer Nanodegree.
 
 ### Certificate
-
-
-[Certi]:https://raw.githubusercontent.com/harsimarsingh8/Front-End-Web-Developer-Projects/master/Nano-Degree Certificate/nanodegree_certificate.png "Certificate"
+![Certi](Nano-Degree Certificate/nanodegree_certificate.png "Certificate")
