@@ -2,4 +2,5 @@
 A Repo containing my projects of  Udacity Front-End -Web- Developer Nanodegree.
 
 ### Certificate
-![Certi](Nano-Degree Certificate/nanodegree_certificate.png "Certificate")
+
+[![Certificate]((Nano-Degree Certificate/nanodegree_certificate.png)]
