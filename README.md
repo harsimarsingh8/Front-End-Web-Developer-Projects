@@ -3,4 +3,4 @@ A Repo containing my projects of  Udacity Front-End -Web- Developer Nanodegree.
 
 ### Certificate
 
-[![Certificate](/nanodegree_certificate.png)]
+![Front-End_Certificate](/Front-End-Certificate.png)
