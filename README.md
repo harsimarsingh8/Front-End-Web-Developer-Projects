@@ -9,8 +9,7 @@ A Repository containing all the projects that I made during Udacity Front-End-We
 
 ### Certificate
 
-[![Certificate](/nanodegree_certificate.png)]
-
+![Front-End_Certificate](/Front-End-Certificate.png)
 
 ## Projects 
 
