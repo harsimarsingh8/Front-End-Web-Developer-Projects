@@ -11,6 +11,20 @@ A Repository containing all the projects that I made during Udacity Front-End-We
 
 ![Front-End_Certificate](/Front-End-Certificate.png)
 
+
+## Courses
+
+- Intro to HTML and CSS
+- Version Control with Git and GitHub
+- JavaScript Basics
+- Intro to jQuery
+- Object-Oriented JavaScript
+- HTML5 Canvas
+- Website Performance Optimization
+- Intro to AJAX
+- JavaScript Design Patterns
+
+
 ## Projects 
 
 __________________________________________________________________________________________
