@@ -27,7 +27,6 @@ A Repository containing all the projects that I made during Udacity Front-End-We
 
 ## Projects 
 
-__________________________________________________________________________________________
 ##### 1. [Establishing-Web-Developer-Mindset](https://github.com/harsimarsingh8/Establishing-a-Web-Developer-Mindset)
 ##### 2. [Mockup to Article](https://github.com/harsimarsingh8/Mockup-to-Article)
 ##### 3. [Animal Trading Cards](https://github.com/harsimarsingh8/Animal-Trading-Cards)
@@ -40,7 +39,6 @@ ________________________________________________________________________________
 
 ## Live Projects
 
-____________________________________________________________________________________________
 ##### 1. [Establishing-Web-Developer-Mindset](https://harsimarsingh8.github.io/Establishing-a-Web-Developer-Mindset/README.md)
 ##### 2. [Mockup to Article](https://harsimarsingh8.github.io/Mockup-to-Article/p1/index.html)
 ##### 3. [Animal Trading Cards](https://harsimarsingh8.github.io/Animal-Trading-Cards/P2/dog.html)
